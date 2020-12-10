@@ -1,4 +1,3 @@
-
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -56,14 +55,14 @@ function draw() {
   mango7.display();
   chain.display();
 
- detectCollision(stone, mango1);
+  detectCollision(stone, mango1);
   detectCollision(stone, mango2);
   detectCollision(stone, mango3);
   detectCollision(stone, mango4);
   detectCollision(stone, mango5);
   detectCollision(stone, mango6);
   detectCollision(stone, mango7);
-	
+
   drawSprites();
  
 }
@@ -80,7 +79,6 @@ function keyPressed(){
     chain.attach(stone.body);
   }
 }
-
 function detectCollision(lstone,lmango){
   stoneBodyPosition = lstone.body.position;
   mangoBodyPosition = lmango.body.position;
